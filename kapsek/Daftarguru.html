@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Guru</title>
+    <link rel="stylesheet" href="daftarguru.css">
+
+    <script>
+         function toggleSubMenuGuru() {
+            const submenuGuru = document.querySelector(".submenu-guru");
+            submenuGuru.classList.toggle("active");
+        }
+
+        function toggleSubMenuKinerja() {
+            const submenuKinerja = document.querySelector(".submenu-kinerja");
+            submenuKinerja.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="kotak">
+        <p class="yayasan">Yayasan <br> Nusaputra</p>
+        <p class="akun"> Robertus Firenza N</p>
+          <img
+          class="headlogo"
+          alt=""
+          src="logonusput.jpg"
+        />
+      </div>
+        </div>
+        
+  
+      <main>
+          
+      </main>
+      <div class="kotak2">
+        <div class="menu-container">
+            <div class="menu">
+                <p class="Navigation">Navigation</p>
+                <a href="homepagekapsek.html">
+                    <div class="menu-item">Dashbord</div>
+                </a>
+                <p class="Penilaian">Penilaian Kepegawaian</p>
+                <a href="profilkapsek.html">
+                    <div class="menu-item">Profil</div>
+                </a>
+                <br>
+                <div class="menu-container2">
+                    <div class="main-menu-button" onclick="toggleSubMenuGuru()">Guru</div>
+                    <div class="submenu-guru">
+                        <a href="Daftarguru.html">
+                            <div class="submenu-item">Daftar Guru</div>
+                        </a>
+                    </div>
+
+                    <div class="main-menu-button" onclick="toggleSubMenuKinerja()">Penilaian Kinerja</div>
+                    <div class="submenu-kinerja">
+                        <a href="penilaiankinerjaguru.html">
+                            <div class="submenu-item">Penilaian Kinerja</div>
+                        </a>
+                        <a href="penilaiansupervisi.html">
+                            <div class="submenu-item">Penilaian Supervisi</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="pusatbantuan.html">
+                <div class="bantuan">Pusat Bantuan</div>
+            </a>
+            <br>
+            <a href="">
+                <div class="Logout">Logout</div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="kotak3">
+        <h1 class="guru-tetap">Guru Tetap</h1>
+        <div class="search-rectangle">
+            <div class="search">Search</div>
+            <div class="rectangle"></div>
+        </div>
+        <table class="tabel">
+                <tr>
+                    <th>No</th>
+                    <th>Nama Guru</th>
+                    <th>Tanggal Masuk</th>
+                    <th>Jabatan</th>
+                    <th>Status</th>
+                    <th>Penilaian</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td>Fransisco Aditya W. S.Kom</td>
+                    <td>20/03/19</td>
+                    <td>Guru SD</td>
+                    <td>Aktif</td> 
+                    <td style="text-align: center; color: red;">❌</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">2</td>
+                    <td>Robertus Firenza S.Pd</td>
+                    <td>30/06/18</td>
+                    <td>Guru SMA</td>
+                    <td>Aktif</td> 
+                    <td style="text-align: center; color: green;">✔</td>
+                </tr>  
+                <tr>
+                    <td style="text-align: center;">2</td>
+                    <td>Ezra Nathanel S.Kom</td>
+                    <td>18/04/20</td>
+                    <td>Guru SMP</td>
+                    <td>Aktif</td> 
+                    <td style="text-align: center; color: green;">✔</td>
+                </tr>    
+    </table>
+    <div class="total-guru">Total guru: 20
+    <div class="row-of-numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>...</div>
+        <div>Next</div>
+    </div>
+    </div>
+    <h1 class="guru-tetap">Guru Tidak Tetap</h1>
+    <div class="search-rectangle">
+        <div class="search">Search</div>
+        <div class="rectangle"></div>
+    </div>
+    <table class="tabel">
+        <tr>
+            <th>No</th>
+            <th>Nama Guru</th>
+            <th>Tanggal Masuk</th>
+            <th>Jabatan</th>
+            <th>Status</th>
+            <th>Penilaian</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td>Fransisco Aditya W. S.Kom</td>
+            <td>20/03/19</td>
+            <td>Guru SD</td>
+            <td>Aktif</td> 
+            <td style="text-align: center; color: red;">❌</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td>Robertus Firenza S.Pd</td>
+            <td>30/06/18</td>
+            <td>Guru SMA</td>
+            <td>Aktif</td> 
+            <td style="text-align: center; color: green;">✔</td>
+        </tr>  
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td>Ezra Nathanel S.Kom</td>
+            <td>18/04/20</td>
+            <td>Guru SMP</td>
+            <td>Aktif</td> 
+            <td style="text-align: center; color: green;">✔</td>
+        </tr>
+    </table>
+    <div class="total-guru">Total guru: 10</div>
+    <div class="row-of-numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>...</div>
+        <div>Next</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

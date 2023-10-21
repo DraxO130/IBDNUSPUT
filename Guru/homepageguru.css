@@ -1,0 +1,132 @@
+body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 10vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 28px;
+  }
+  
+  .headlogo{
+  
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 40px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 40px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    position: relative;
+    top: -400px;
+    left: -300px;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 520%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 200%;
+  }
+
+  .selamat_datang{
+    font-size: 35px;
+    padding-top: 12px;
+    padding-left: 30px;
+  }
+
+  .kotak4{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 76%; 
+    width: 37%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+
+  }
+
+  .Nama{
+    padding-top: 200px;
+    font-size: 30px;
+    padding-left: 20%;
+  }
+
+  .instansi{
+    font-size: 28px;
+    padding-left: 30%;
+  }
+
+  .isi_profil{
+    font-size: 20px;
+  padding-left: 30%;
+  }
+  
+  .tabel{
+    position: absolute;
+   margin-left: 60%;
+   top: 20%;
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: center;
+			padding: 8px;
+			border: 1px solid black;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+  }
+

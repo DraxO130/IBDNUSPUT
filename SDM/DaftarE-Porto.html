@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar E-portofolio</title>
+    <link rel="stylesheet" href="DaftarE-Porto.css">
+    <style>
+        body{
+    background-color: #6A99DD;
+  }
+  
+  .kotak{
+      height: 10vh; /* 10% dari tinggi viewport */
+      width: 100vw; /* 100% dari lebar viewport */
+      background-color: #fff; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: absolute;
+  }
+  
+  .menu{
+    font-size: 28px;
+  }
+  
+  .headlogo{
+  
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 20px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+    font-size: 16px;
+  }
+  
+  .Navigation{
+    font-size: 15px;
+  }
+  
+  .Penilaian{
+    font-size: 15px;
+  }
+  
+  .kotak2{
+    margin-top: -0.2%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    margin-top: 8px;
+    left: 203px;
+    height: 700px; 
+    width: 1000px; 
+    background-color:#fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  } 
+
+  .popup {
+      position: fixed;
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Style the popup box */
+    .popup-box {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      height: auto;
+      text-align: center;
+    }
+
+    /* Style the close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+  .Logout {
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /* Adjust padding for height and width as needed */
+    }
+
+    .pilihan{
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /
+    }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+        </div>
+        <img class="headlogo" alt="" src="logonusput.jpg" width="55" height="60">
+
+        <div class="kotak2">
+            <div class="menu-container">
+                <div class="menu">
+                    <p class="Navigation">Menu</p>
+                    <a href="HomepageSDM.html">
+                        <div class="menu-item">Dashbord</div>
+                    </a>
+                    <p class="Penilaian">Kepegawaian</p>
+                    <a href="profilSDM.html">
+                        <div class="menu-item">Profil</div>
+                    </a>
+                    <br>
+                    <div class="menu-container2">
+                        <div class="submenu-guru">
+                            <a href="Daftarguru.html">
+                                <div class="submenu-item">Guru</div><br>
+                            </a>
+                        </div>
+                        <a href="PenilaianSDM.html"><div class="menu2">Penilaian Kinerja</div></a><br>
+                        </div>
+                        <a href="DaftarE-Porto.html"><div class="menu3">Daftar E-portofolio</div></a>
+                    </div><br>
+                    <a href="RekapPenilaian.html"><div class="Rekap">Rekap Penilaian</div></a>
+                </div>
+                <br>
+                <a href="">
+                    <div class="bantuan">Pusat Bantuan</div>
+                </a>
+                <br>
+                <button class="Logout" onclick="document.getElementById('popup').style.display='block'">Logout</button>
+                    <div id="popup" class="popup">
+
+                        <!-- Popup box -->
+                        <div class="popup-box">
+                          <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+                          <p>Yakin ingin keluar?</p>
+                          <button class="pilihan">Ya</button>
+                          <button class="pilihan">Tidak</button>
+                        </div>
+                      
+                      </div>
+            </div>
+        </div>
+    <div class="kotak3"> 
+        <br>
+        <input type="text" placeholder="Search" style="float:right;margin-bottom:10px;">
+        <br>
+        <br>
+
+        <div class="tabel">
+            <table>
+                <caption>Tabel E-portofolio</caption>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Judul E-portofolio</th>
+                        <th>Tanggal kegiatan</th>
+                        <th>File pendukung</th>
+                        <th>Kode DOI</th>
+                        <th>keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Judul E-Portofolio</td>
+                        <td>22/09/21</td>
+                        <td><input type="file" accept="pdf"></td>
+                        <td>000</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Judul E-Portofolio</td>
+                        <td>12/08/22</td>
+                        <td><input type="file" accept="pdf"></td>
+                        <td>001</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Judul E-Portofolio</td>
+                        <td>1/09/21</td>
+                        <td><input type="file" accept="pdf"></td>
+                        <td>002</td>
+                        
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Judul E-Portofolio</td>
+                        <td>20/12/19</td>
+                        <td><input type="file" accept="pdf"></td>
+                        <td>003</td>
+                        <td>X</td>
+                    </tr>
+                    <tfoot><tr><th colspan="7">
+                        <div class="pagination">
+                          <a href="#">&laquo;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">&raquo;</a></div></th></tr></tfoot>
+                </table>
+                   
+        </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Portofolio</title>
+  <link rel="stylesheet" href="Uploadporto.css">
+  <link rel="stylesheet" href="path-to-bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="pusatbantuanguru.css">
+  <style>
+    .popup {
+      position: fixed;
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Style the popup box */
+    .popup-box {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      height: auto;
+      text-align: center;
+    }
+
+    /* Style the close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .Logout {
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /* Adjust padding for height and width as needed */
+    }
+
+    .pilihan{
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /
+    } 
+
+  </style>
+</head>
+<body>
+  <div class="head">
+    <div class="kotak">
+        <div class="yayasan">Yayasan 
+            <br>Nusaputra</div>
+        <div class="akun">Robertus Firenza N</div>
+</div>
+    <img class="headlogo" alt="" src="logonusput.jpg" width="60" height="70">
+</div>
+
+<div class="kotak2">
+    <div class="menu-container">
+        <div class="menu">
+            <p class="Navigation">Menu</p>
+            <a href="homepageguru.html"><div class="menu-item">Dashboard</div></a>
+            <p class="Penilaian">Kepegawaian</p>
+            <a href="profilguru.html">
+                <div class="menu-item">Profil</div>
+            </a>
+            <br>
+            <div class="menu-container">
+                <div class="main-menu-button" onclick="toggleSubMenu()">E-Portofolio</div>
+                <div class="submenu">
+                    <a href="Uploadporto.html">
+                        <div class="submenu-item">Upload E-Portofolio</div>
+                    </a>
+                    <a href="daftarguru.html">
+                        <div class="submenu-item">Daftar E-Portofolio</div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <a href="pusatbantuanguru.html">
+                <div class="menu-item">Pusat Bantuan</div>
+            </a>
+            <br>
+            <button class="Logout" onclick="document.getElementById('popup').style.display='block'">Logout</button>
+            <div id="popup" class="popup">
+
+                <!-- Popup box -->
+                <div class="popup-box">
+                  <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+                  <p>Yakin ingin keluar?</p>
+                  <button class="pilihan">Ya</button>
+                  <button class="pilihan">Tidak</button>
+                </div>
+              
+              </div>
+        </div>
+    </div>
+
+    <div class="kotak3">
+        <H3 id="Judul">E-Masukkan Bantuan</H3>
+        <input type="text" class="custom-email" name="text">
+        <button type="submit">Submit</button>
+      </div>
+<br>
+      </div>
+    <script src="path-to-bootstrap/js/jquery.min.js"></script>
+<script src="path-to-bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

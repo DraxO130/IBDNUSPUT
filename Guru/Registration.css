@@ -1,0 +1,136 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    background-color: #C5DFF8;
+}
+.img{
+margin-left: 0px;
+padding: 0px;
+}
+
+.c_login-page-text {
+    margin-left: 2vh;
+    font-size: 19px;
+  }
+
+  .c_login-page-text01 input{
+    margin-left: 2vh;
+    font-size: 19px;
+  }
+
+  .c_login-page-text01 input[type="text"]{
+    transform: scale(0.9);
+    padding: 8px;
+    padding-right: 12%;
+  }
+
+  .c_login-page-text02{
+    margin-left: 2vh;
+    font-size: 19px;
+  }
+
+  .c_login-page-text02 input[type="email"]{
+transform: scale(1.2);
+padding: 9px;
+padding-right: 12%;
+  }
+
+.c_login-page-text04{
+    margin-left: 2vh;
+    font-size: 19px;
+}
+
+.c_login-page-text04 input[type="password"]{
+    transform: scale(1.2);
+    padding: 9px;
+    padding-right: 12%;
+    }
+
+.c_login-page-text08 {
+    margin-left:2vh;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.c_login-page-text08 label {
+    display: inline-block;
+    margin-right: 10px; /* Jarak antara label dan checkbox */
+  }
+
+  .c_login-page-text08 input[type="checkbox"] {
+    transform: scale(1.8); /* Sesuaikan ukuran sesuai kebutuhan */
+  }
+
+.c_login-page-text06{
+    margin-left: 2vh;
+}
+
+.custom-button {
+    padding: 10px 19vh; /* Atur padding horizontal sesuai kebutuhan */
+    background-color:#4A55A2; /* Mengatur warna latar belakang menjadi biru */
+    color: white; /* Mengatur warna teks menjadi putih */
+    border: none; /* Menghapus border tombol */
+    cursor: pointer; /* Mengubah ikon kursor menjadi tangan saat mengarahkan ke tombol */
+  }
+  
+label {
+    display: block; 
+   
+  }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    transform: scale(1);
+}
+
+.kotak {
+    padding-right: 20px;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    opacity: 12;
+}
+
+.kotak {
+    width: 340px;
+    padding: 20px;
+  }
+  
+  .c_login-page-text {
+    text-align: center;
+  }
+
+.ID{
+  left: -12px;
+}
+
+  .c_login-page-text01,
+  .c_login-page-text02,
+  .c_login-page-text04,
+  .c_login-page-text08 {
+    margin: 10px 0;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px; /* Menambahkan 10px padding untuk memperbesar input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

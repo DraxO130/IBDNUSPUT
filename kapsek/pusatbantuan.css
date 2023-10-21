@@ -1,0 +1,333 @@
+.parent-div {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .FRAME-305-3689 {
+    transform: rotate(0deg);
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    overflow: hidden;
+    background: rgba(106, 153, 221, 1);
+  }
+  .FRAME-305-3696 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 1472px;
+    top: 435px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .FRAME-305-3699 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 1474px;
+    top: 635px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .RECTANGLE-305-3739 {
+    position: absolute;
+    left: 330px;
+    top: 215px;
+    transform: rotate(0deg);
+    transform-origin: center !important;
+    background: rgba(255, 255, 255, 1);
+  
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
+    width: 1080px;
+    height: 842px;
+    opacity: 1;
+  }
+  .RECTANGLE-305-3744 {
+    position: absolute;
+    left: 390px;
+    top: 409px;
+    transform: rotate(0deg);
+    transform-origin: center !important;
+    background: rgba(255, 255, 255, 1);
+  
+    border: 1px solid rgba(0, 0, 0, 1);
+  
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
+    width: 929px;
+    height: 482px;
+    opacity: 1;
+  }
+  .GROUP-305-3749 {
+    position: absolute;
+    width: 132px;
+    height: 36px;
+    left: 422px;
+    top: 844px;
+    transform: rotate(0deg);
+    z-index: 15;
+    opacity: 1;
+  }
+  .RECTANGLE-305-3750 {
+    position: absolute;
+    left: 422px;
+    top: 844px;
+    transform: rotate(0deg);
+    transform-origin: center !important;
+    background: rgba(0, 102, 255, 1);
+  
+    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  
+    width: 132px;
+    height: 36px;
+    opacity: 1;
+  }
+  .RECTANGLE-306-4569 {
+    position: absolute;
+    left: 1px;
+    top: 140px;
+    transform: rotate(0deg);
+    transform-origin: center !important;
+    background: rgba(255, 255, 255, 1);
+  
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+    width: 308px;
+    height: 884px;
+    opacity: 1;
+  }
+  .FRAME-306-4574 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 103px;
+    height: 27px;
+    left: 48px;
+    top: 695px;
+    opacity: 1;
+  }
+  .RECTANGLE-306-4581 {
+    position: absolute;
+    left: 298px;
+    top: 155px;
+    transform: rotate(0deg);
+    transform-origin: center !important;
+    background: rgba(179, 179, 179, 0.65);
+  
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+    width: 8px;
+    height: 415px;
+    opacity: 1;
+  }
+  .GROUP-306-4582 {
+    position: absolute;
+    width: 243.029541015625px;
+    height: 75px;
+    left: 49px;
+    top: 400px;
+    transform: rotate(0deg);
+    z-index: 25;
+    opacity: 1;
+  }
+  .FRAME-306-4583 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 243.029541015625px;
+    height: 28px;
+    left: 49px;
+    top: 400px;
+    opacity: 1;
+  }
+  .GROUP-306-4588 {
+    position: absolute;
+    width: 147px;
+    height: 30px;
+    left: 47px;
+    top: 241px;
+    transform: rotate(0deg);
+    z-index: 26;
+    opacity: 1;
+  }
+  .GROUP-306-4589 {
+    position: absolute;
+    width: 147px;
+    height: 30px;
+    left: 47px;
+    top: 241px;
+    transform: rotate(0deg);
+    z-index: 26;
+    opacity: 1;
+  }
+  .FRAME-306-4590 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 47px;
+    top: 241px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .GROUP-306-4594 {
+    position: absolute;
+    width: 243.029541015625px;
+    height: 28px;
+    left: 48px;
+    top: 348px;
+    transform: rotate(0deg);
+    z-index: 27;
+    opacity: 1;
+  }
+  .FRAME-306-4595 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 243.029541015625px;
+    height: 28px;
+    left: 48px;
+    top: 348px;
+    opacity: 1;
+  }
+  .FRAME-306-4597 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 26.880001068115234px;
+    height: 28px;
+    left: -1px;
+    top: 0px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .FRAME-306-4599 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 241px;
+    height: 127px;
+    left: 49px;
+    top: 499px;
+    opacity: 1;
+  }
+  .GROUP-306-4600 {
+    position: absolute;
+    width: 214px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    transform: rotate(0deg);
+    z-index: 1;
+    opacity: 1;
+  }
+  .FRAME-306-4601 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0px;
+    top: 2px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .GROUP-306-4570 {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 49px;
+    top: 641px;
+    transform: rotate(0deg);
+    z-index: 30;
+    opacity: 1;
+  }
+  .FRAME-306-4571 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 49px;
+    top: 641px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .RECTANGLE-306-4607 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: rotate(0deg);
+    transform-origin: center !important;
+    background: rgba(255, 255, 255, 1);
+  
+    width: 1440px;
+    height: 140px;
+    opacity: 1;
+  }
+  .FRAME-306-4608 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 47px;
+    top: 56px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  .FRAME-306-4610 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    left: 37px;
+    top: 88px;
+    opacity: 1;
+  }
+  .FRAME-306-4614 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1340px;
+    top: 50px;
+    opacity: 1;
+  }
+  .FRAME-306-4616 {
+    transform: rotate(0deg);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
+    opacity: 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  
+  

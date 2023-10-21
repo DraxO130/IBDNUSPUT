@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penilaian Supervisi</title>
+    <link rel="stylesheet" href="penilaiansupervisi.css" />
+    <script>
+      function toggleSubMenuGuru() {
+        const submenuGuru = document.querySelector(".submenu-guru");
+        submenuGuru.classList.toggle("active");
+      }
+
+      function toggleSubMenuKinerja() {
+        const submenuKinerja = document.querySelector(".submenu-kinerja");
+        submenuKinerja.classList.toggle("active");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="head">
+      <div class="kotak">
+      <p class="yayasan">Yayasan <br> Nusaputra</p>
+      <p class="akun"> Robertus Firenza N</p>
+        <img
+        class="headlogo"
+        alt=""
+        src="logonusput.jpg"
+      />
+    </div>
+      </div>
+      
+      <div class="kotak2">
+        <div class="menu-container">
+            <div class="menu">
+                <p class="Navigation">Navigation</p>
+                <a href="homepagekapsek.html">
+                    <div class="menu-item">Dashbord</div>
+                </a>
+                <p class="Penilaian">Penilaian Kepegawaian</p>
+                <a href="profilkapsek.html">
+                    <div class="menu-item">Profil</div>
+                </a>
+                <br>
+                <div class="menu-container2">
+                    <div class="main-menu-button" onclick="toggleSubMenuGuru()">Guru</div>
+                    <div class="submenu-guru">
+                        <a href="Daftarguru.html">
+                            <div class="submenu-item">Daftar Guru</div>
+                        </a>
+                    </div>
+
+                    <div class="main-menu-button" onclick="toggleSubMenuKinerja()">Penilaian Kinerja</div>
+                    <div class="submenu-kinerja">
+                        <a href="penilaiankinerjaguru.html">
+                            <div class="submenu-item">Penilaian Kinerja</div>
+                        </a>
+                        <a href="penilaiansupervisi.html">
+                            <div class="submenu-item">Penilaian Supervisi</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="pusatbantuan.html">
+                <div class="bantuan">Pusat Bantuan</div>
+            </a>
+            <br>
+            <a href="">
+                <div class="Logout">Logout</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="kotak3">
+      <h1 class="title">
+        Penilaian Supervisi Guru
+      </h1>
+      <h3 class="subtitle">Skala Penilaian: <br>
+      0 : Tidak Dilakukan 1 : Dilakukan tapi tidak sempurna 2 : Melakukan dan sempurna</h3>
+
+      <div class="table-wrap">
+          <table class="table">
+                <tr class="bg-blue">
+                    <th width="40%">Aspek Penilaian</th>
+                    <th class="text-center">0</th>
+                    <th class="text-center">1</th>
+                    <th class="text-center">2</th>
+                </tr>
+                <tr class="bg-light-blue">
+                    <th>Penilaian Kompetensi dan Pendagogik</th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr class="bg-lighter-blue">
+                    <th>B. Pelaksanaan Pembelajaran</th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr class="bg-lightest-blue">
+                    <th>Kegiatan Pendahuluan</th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr>
+                    <td>1. Memberi salam dalam bahasa inggris / mandarin</td>
+                    <td><input type="radio" name="1"></td>
+                    <td><input type="radio" name="1"></td>
+                    <td><input type="radio" name="1"></td>
+                </tr>
+                <tr>
+                    <td>2. Mengabsen kehadiran dalam bhs inggris / mandarin</td>
+                    <td><input type="radio" name="2"></td>
+                    <td><input type="radio" name="2"></td>
+                    <td><input type="radio" name="2"></td>
+                </tr>
+                <tr>
+                    <td>3. Mempersiapkan siswa</td>
+                    <td><input type="radio" name="3"></td>
+                    <td><input type="radio" name="3"></td>
+                    <td><input type="radio" name="3"></td>
+                </tr>
+                <tr>
+                    <td>4. Menyampaikan kompetensi dasar/tujuan pembelajaran</td>
+                    <td><input type="radio" name="4"></td>
+                    <td><input type="radio" name="4"></td>
+                    <td><input type="radio" name="4"></td>
+                </tr>
+                <tr>
+                    <td class="text-red">5. Memperhatikan kebersihan kelas (saat pandemi hilang)</td>
+                    <td><input type="radio" name="5"></td>
+                    <td><input type="radio" name="5"></td>
+                    <td><input type="radio" name="5"></td>
+                </tr>
+                <tr>
+                    <td>6. Melakukan apersepsi</td>
+                    <td><input type="radio" name="6"></td>
+                    <td><input type="radio" name="6"></td>
+                    <td><input type="radio" name="6"></td>
+                </tr>
+                <tr class="bg-lightest-blue">
+                    <th>Kegiatan Pembelajaran</th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr>
+                    <td>7. Menguasai Materi</td>
+                    <td><input type="radio" name="7"></td>
+                    <td><input type="radio" name="7"></td>
+                    <td><input type="radio" name="7"></td>
+                </tr>
+                <tr>
+                    <td>8.Kontekstual</td>
+                    <td><input type="radio" name="8"></td>
+                    <td><input type="radio" name="8"></td>
+                    <td><input type="radio" name="8"></td>
+                </tr>
+                <tr>
+                    <td>9.Menyampaikan Materi dengan jelas</td>
+                    <td><input type="radio" name="8"></td>
+                    <td><input type="radio" name="8"></td>
+                    <td><input type="radio" name="8"></td>
+                </tr>
+                <tr>
+                    <td>10. Melaksanakan pembelajaran sesuai dengan kompetensi/tujuan</td>
+                    <td><input type="radio" name="9"></td>
+                    <td><input type="radio" name="9"></td>
+                    <td><input type="radio" name="9"></td>
+                </tr>
+                <tr>
+                    <td>11.Menguasai Kelas</td>
+                    <td><input type="radio" name="10"></td>
+                    <td><input type="radio" name="10"></td>
+                    <td><input type="radio" name="10"></td>
+                </tr>
+                <tr>
+                    <td>12. Melaksanakan pembelajaran sesuai alokasi waktu</td>
+                    <td><input type="radio" name="11"></td>
+                    <td><input type="radio" name="11"></td>
+                    <td><input type="radio" name="11"></td>
+                </tr>
+                <tr>
+                    <td>13. Tercipta interaksi guru dan siswa</td>
+                    <td><input type="radio" name="12"></td>
+                    <td><input type="radio" name="12"></td>
+                    <td><input type="radio" name="12"></td>
+                </tr>
+                <tr>
+                    <td>14. Menggunakan media yang sesuai</td>
+                    <td><input type="radio" name="12"></td>
+                    <td><input type="radio" name="12"></td>
+                    <td><input type="radio" name="12"></td>
+                </tr>
+                <tr>
+                    <td>15. Memanfaatkan berbagai sumber belajar</td>
+                    <td><input type="radio" name="13"></td>
+                    <td><input type="radio" name="13"></td>
+                    <td><input type="radio" name="13"></td>
+                <tr>
+                    <td>16. Memanfaat IT (media ajar, sumber belajar)</td>
+                    <td><input type="radio" name="14"></td>
+                    <td><input type="radio" name="14"></td>
+                    <td><input type="radio" name="14"></td>
+                </tr>
+                <tr>
+                    <td>17. Merespon positif pertanyaan siswa</td>
+                    <td><input type="radio" name="15"></td>
+                    <td><input type="radio" name="15"></td>
+                    <td><input type="radio" name="15"></td>
+                </tr>
+                <tr>
+                    <td>18. Menyisipkan pesan moral/td>
+                    <td><input type="radio" name="16"></td>
+                    <td><input type="radio" name="16"></td>
+                    <td><input type="radio" name="16"></td>
+                </tr>
+                <tr>
+                    <td>19. Menggunakan bahasa tulis secara jelas, baik, dan benar</td>
+                    <td><input type="radio" name="17"></td>
+                    <td><input type="radio" name="17"></td>
+                    <td><input type="radio" name="17"></td>
+                </tr>
+                <tr>
+                    <td>20. Menggunakan bahasa lisan secara jelas, baik, dan benar</td>
+                    <td><input type="radio" name="18"></td>
+                    <td><input type="radio" name="18"></td>
+                    <td><input type="radio" name="18"></td>
+                </tr>
+                <tr class="bg-blue">
+                    <th width="40%">Aspek Penilaian</th>
+                    <th class="text-center">0</th>
+                    <th class="text-center">1</th>
+                    <th class="text-center">2</th>
+                </tr>
+                <tr class="bg-lightest-blue">
+                    <th>Penutup</th>
+                    <th colspan="3"></th>
+                </tr>
+                <tr>
+                    <td>21. Melakukan refleksi</td>
+                    <td><input type="radio" name="19"></td>
+                    <td><input type="radio" name="19"></td>
+                    <td><input type="radio" name="19"></td>
+                </tr>
+                <tr>
+                    <td>22. Membuat rangkuman dengan melibatkan siswa</td>
+                    <td><input type="radio" name="20"></td>
+                    <td><input type="radio" name="20"></td>
+                    <td><input type="radio" name="20"></td>
+                </tr>
+                <tr>
+                    <td>23. Melaksanakan tindak lanjut (dengan menggunakan IT poin 2)</td>
+                    <td><input type="radio" name="21"></td>
+                    <td><input type="radio" name="21"></td>
+                    <td><input type="radio" name="21"></td>
+                </tr>
+                <tr class="bg-lightest-blue">
+                    <th>Skor</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="bg-lightest-blue">
+                    <th>Total Skor</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+          </table>
+
+          <div class="justify-end">
+              <button class="btn btn-blue">Submit</button>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

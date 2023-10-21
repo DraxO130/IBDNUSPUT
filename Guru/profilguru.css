@@ -1,0 +1,164 @@
+body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 10vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 20px;
+  }
+  
+  .headlogo{
+  width: 4%;
+    height: 2%;
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 20px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 20px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+    font-size: 20px;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  
+  .kotak3{
+    position: relative;
+    top: 24px;
+    left: 18%;
+    height: 410px; 
+    width: 30%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+    border-radius: 10px;
+  }
+
+  .Name{
+    font-size : 20px;
+  }
+
+  .NIDN{
+    font-size: 17px;
+  }
+
+  .Status{
+    font-size: 14px;
+  }
+
+  .koalisi{
+    font-size: 15px;
+  }
+  
+  .isi_profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menengahkan secara horizontal */
+    justify-content: center; /* Menengahkan secara vertikal */
+    height: 100vh;
+  }
+
+.kotak4{
+  position: relative;
+  top: -387px;
+  left: 49%;
+  height: 500px;
+  width: 50%; 
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+  border-radius: 10px;
+}
+
+.Data_Utama, .Update {
+  margin: 0; 
+  display: inline;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.Update {
+  margin-left: 10px; /* Menambahkan margin kiri */
+}
+
+.ISIS {
+  margin-top: 50px; /* Menambahkan margin atas untuk menurunkan elemen */
+  padding-left: 10px;
+}
+
+.Navigation{
+  font-size: 15px;
+}
+
+.Dashboard{
+  font-size: 15px;
+}
+
+.Profil{
+  font-size: 15px;
+}
+
+.E-Portofolio{
+  font-size: 15px;
+}
+
+.PusatBantuan{
+  font-size: 15px;
+}
+
+.Logout{
+  font-size: 15px;
+}
+
+.Penilaian{
+  font-size: 15px;
+}
+
+

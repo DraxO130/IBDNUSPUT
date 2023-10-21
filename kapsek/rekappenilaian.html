@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Kepala Sekolah</title>
+    <link rel="stylesheet" href="rekappenilaian.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
+    <style>
+        .submenu {
+            display: none;
+        }
+
+        .submenu.active {
+            display: block;
+        }
+    </style>
+
+    <script>
+        function toggleSubMenuGuru() {
+            const submenuGuru = document.querySelector(".submenu-guru");
+            submenuGuru.classList.toggle("active");
+        }
+
+        function toggleSubMenuKinerja() {
+            const submenuKinerja = document.querySelector(".submenu-kinerja");
+            submenuKinerja.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+        </div>
+        <img class="headlogo" alt="" src="logonusput.jpg" width="100" height="110">
+    </div>
+    <h1 class="text">Rekap Penilaian</h1>
+    <div class="kotak2">
+        <div class="menu-container">
+            <div class="menu">
+                <p class="Navigation">Navigation</p>
+                <a href="homepagekapsek.html">
+                    <div class="menu-item">Dashbord</div>
+                </a>
+                <p class="Penilaian">Penilaian Kepegawaian</p>
+                <a href="profilkapsek.html">
+                    <div class="menu-item">Profil</div>
+                </a>
+                <br>
+                <div class="menu-container2">
+                    <div class="main-menu-button" onclick="toggleSubMenuGuru()">Guru</div>
+                    <div class="submenu-guru">
+                        <a href="Daftarguru.html">
+                            <div class="submenu-item">Daftar Guru</div>
+                        </a>
+                    </div>
+
+                    <div class="main-menu-button" onclick="toggleSubMenuKinerja()">Penilaian Kinerja</div>
+                    <div class="submenu-kinerja">
+                        <a href="penilaiankinerjaguru.html">
+                            <div class="submenu-item">Penilaian Kinerja</div>
+                        </a>
+                        <a href="penilaiansupervisi.html">
+                            <div class="submenu-item">Penilaian Supervisi</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="pusatbantuan.html">
+                <div class="bantuan">Pusat Bantuan</div>
+            </a>
+            <br>
+            <a href="">
+                <div class="Logout">Logout</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="kotak3">
+        <h1 class="Rekap-penilaian">Rekap Penilaian</h1>
+        <div class="kotak4">
+            <div class="kotak5">
+                <div class="user-icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <p class="text1">Robertus Firenza Nugroho, S.Pd</p>
+                <p class="text1">19283573023853827</p>
+                <p class="text1">Aktif</p>
+                <p class="text1">Yayasan Nusaputera</p>
+            </div>
+            <div class="kotak6">
+                <p class="text2">NIDN : 19283573023853827</p>
+                <p class="text2">Nama Lengkap : Robertus Firenza Nugroho</p>
+                <p class="text2">Tempat / Tanggal Lahir : Semarang / 20-03-1998</p>
+                <p class="text2">Usia : 23 Tahun </p>
+                <p class="text2">Agama : Katolik</p>
+                <p class="text2">Gender : Laki - Laki</p>
+                <p class="text2">Tahun Masuk : 2021</p>
+                <p class="text2">Jabatan Pegawai : Guru SMA</p>
+                <p class="text2">Bidang Studi : Akuntansi</p>
+                <p class="text2">Pendidikan : S-1 Akuntansi</p>
+            </div>
+        </div>
+        <table class="tabel">
+            <tr>
+                <th style="width: 500px;">Penilaian</th>
+                <th style="width: 200px;">Skor Maksimal</th>
+                <th style="width: 200px;">Skor Perolehan</th>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Penilaian Kompetensi dan Pendagogik</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>A. Administrasi Perencanaan Pembelajaran  ------------10%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>B.Pelaksanaan Pembelajaran                    ----------------30% -->Pandemi</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>C.Evaluasi dan Tindak Lanjut                  -----------------10%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Kompetensi  Kepribadian                  ---------------------15%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Kompetensi Sosial                  ----------------------------15%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Loyalitas-                  -------------------------------------20%</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">TOTAL SKOR</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="kotak7">
+            <p class="text3">Dengan Catatan Prestasi : </p>
+        </div>
+    </div>
+</body>
+</html>

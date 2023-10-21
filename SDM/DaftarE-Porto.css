@@ -1,0 +1,80 @@
+body{
+    background-color: #6A99DD;
+  }
+  
+  .kotak{
+      height: 10vh; /* 10% dari tinggi viewport */
+      width: 100vw; /* 100% dari lebar viewport */
+      background-color: #fff; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: absolute;
+  }
+  
+  .menu{
+    font-size: 28px;
+  }
+  
+  .headlogo{
+  
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 20px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+    font-size: 16px;
+  }
+  
+  .Navigation{
+    font-size: 15px;
+  }
+  
+  .Penilaian{
+    font-size: 15px;
+  }
+  
+  .kotak2{
+    margin-top: -0.2%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    margin-top: 8px;
+    left: 203px;
+    height: 700px; 
+    width: 1000px; 
+    background-color:#fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }

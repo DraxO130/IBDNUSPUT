@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil SDM Update</title>
+    <link rel="stylesheet" href="profilSDMupdate.css">
+    <style>
+
+body{
+  background-color: #6A99DD;
+}
+
+.kotak{
+    height: 10vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.menu{
+  font-size: 28px;
+}
+
+.headlogo{
+
+ margin-left: 4%;
+  position: relative;
+}
+
+.yayasan{
+  font-size: 20px;
+  right: 84%;
+  position: absolute;
+}
+
+.akun{
+  font-size: 25px;
+  right: 4%;
+  position: absolute;
+}
+
+/* Style for the submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.menu-container.active .submenu {
+  display: block;
+}
+
+.menu{
+  padding-top: 4%;
+  padding-left: 3%;
+  font-size: 16px;
+}
+
+.Navigation{
+  font-size: 15px;
+}
+
+.Penilaian{
+  font-size: 15px;
+}
+
+.kotak2{
+  margin-top: -0.2%;
+  height: 90%; /* 10% dari tinggi viewport */
+  width: 15%; /* 100% dari lebar viewport */
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.kotak3{
+  margin-top: 8px;
+  left: 203px;
+  height: 700px; 
+  width: 1000px; 
+  background-color:#fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.kotak3{
+  position: relative;
+  top: 24px;
+  left: 18%;
+  height: 410px; 
+  width: 30%; 
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+  border-radius: 10px;
+}
+
+.Name{
+  font-size : 20px;
+}
+
+.NIDN{
+  font-size: 17px;
+}
+
+.Status{
+  font-size: 14px;
+}
+
+.koalisi{
+  font-size: 15px;
+}
+
+.isi_profil{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menengahkan secara horizontal */
+  justify-content: center; /* Menengahkan secara vertikal */
+  height: 100vh;
+}
+
+.kotak4{
+position: relative;
+top: -387px;
+left: 49%;
+height: 700px;
+width: 51%; 
+background-color: #fff; 
+box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+border-radius: 10px;
+}
+
+.Data_Utama, .Update {
+  margin: 0; 
+  display: inline;
+  padding-top: 50px;
+  padding-left: 12px;
+  }
+
+  form {
+    margin-left: 12px;
+    width: 400px;
+    padding: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  input[type="text"], select {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .Submit{
+  margin-left: 200px;
+  }
+  
+  .Tanggal_keluar {
+    margin-left: 40px; /* Atur jarak horizontal sesuai kebutuhan */
+  }
+  
+  input{
+    margin: 12px;
+    right: 12px;
+  }
+  
+  .nama_lengkap{
+    margin-left: 12px;
+  }
+  
+  .TTL {
+    margin-left: 12px;
+  }
+  
+  .Navigation{
+    font-size: 15px;
+  }
+  
+  .Dashboard{
+    font-size: 15px;
+  }
+  
+  .Profil{
+    font-size: 15px;
+  }
+  
+  .E-Portofolio{
+    font-size: 15px;
+  }
+  
+  .PusatBantuan{
+    font-size: 15px;
+  }
+  
+  .Logout{
+    font-size: 15px;
+  }
+  
+  .Penilaian{
+    font-size: 15px;
+  }    
+
+  .popup {
+      position: fixed;
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Style the popup box */
+    .popup-box {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      height: auto;
+      text-align: center;
+    }
+
+    /* Style the close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+        .Logout {
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /* Adjust padding for height and width as needed */
+    }
+
+    .pilihan{
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /
+    }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+        </div>
+        <img class="headlogo" alt="" src="logonusput.jpg" width="55" height="60">
+
+        <div class="kotak2">
+            <div class="menu-container">
+                <div class="menu">
+                    <p class="Navigation">Menu</p>
+                    <a href="HomepageSDM.html">
+                        <div class="menu-item">Dashbord</div>
+                    </a>
+                    <p class="Penilaian">Kepegawaian</p>
+                    <a href="profilSDM.html">
+                        <div class="menu-item">Profil</div>
+                    </a>
+                    <br>
+                    <div class="menu-container2">
+                        <div class="submenu-guru">
+                            <a href="Daftarguru.html">
+                                <div class="submenu-item">Guru</div><br>
+                            </a>
+                        </div>
+                        <a href="PenilaianSDM.html"><div class="menu2">Penilaian Kinerja</div></a><br>
+                        </div>
+                        <a href="DaftarE-Porto.html"><div class="menu3">Daftar E-portofolio</div></a>
+                    </div><br>
+                    <a href="RekapPenilaian.html"><div class="Rekap">Rekap Penilaian</div></a>
+                </div>
+                <br>
+                <a href="">
+                    <div class="bantuan">Pusat Bantuan</div>
+                </a>
+                <br>
+                <button class="Logout" onclick="document.getElementById('popup').style.display='block'">Logout</button>
+                <div id="popup" class="popup">
+
+                    <!-- Popup box -->
+                    <div class="popup-box">
+                      <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+                      <p>Yakin ingin keluar?</p>
+                      <button class="pilihan">Ya</button>
+                      <button class="pilihan">Tidak</button>
+                    </div>
+                  
+                  </div>
+            </div>
+        </div>
+
+        <div class="kotak3">
+            <div class="isi_profil">
+               <p class="Name">Robertus Firenza Nugroho, S.Pd </p> 
+                  <p class="NIDN"> 19283573023853827</p> 
+                     <p class="Status">Aktif</p>   
+                   <p class="koalisi">Yayasan Nusaputera</p> 
+            </div>
+        </div>
+    
+        <div class="kotak4">
+            <p class="Data_Utama"><a href="profilSDM.html">Data Utama</a></p>
+               <p class="Update"><a href="profilSDMupdate.html">Update</a>  </p>
+               <div class="ISIS">
+                <form action="update.php" method="post">
+             <label for="nama_lengkap"> Nama Lengkap:</label><input type="text" id="nama_lengkap" name="nama_lengkap"><br>
+     
+             <label for="tempat_tanggal_lahir" >TTL:</label><input type="text" id="tempat_tanggal_lahir" name="tempat_tanggal_lahir" class="TTL"><br>
+     
+             <label for="agama">Agama:</label>
+             <select id="agama" name="agama">
+                 <option value="Islam">Islam</option>
+                 <option value="Kristen Protestan">Kristen Protestan</option>
+                 <option value="Katolik">Katolik</option>
+                 <option value="Hindu">Hindu</option>
+                 <option value="Buddha">Buddha</option>
+                 <option value="Konghucu">Konghucu</option>
+                 <option value="Lainnya">Lainnya</option>
+               </select><br>
+     
+               <label for="gender">Gender:</label>
+               Laki-laki<input type="radio" id="gender" name="gender" value="male">
+               Perempuan<input type="radio" id="gender" name="gender" value="female"><br><br>
+     
+               <label for="tahun_masuk">Tahun Masuk:</label><input type="text" id="tahun_masuk" name="tahun_masuk" value=""><br>
+     
+               <label for="jabatan_pegawai">Jabatan Pegawai:</label><input type="text" id="jabatan_pegawai" name="jabatan_pegawai" value=""><br>
+     
+               <label for="pendidikan">Pendidikan:</label>S-1 Pendidikan Akuntansi<input type="radio" id="pendidikan" name="pendidikan" value=""><br>
+     
+               <label for="Institute">Nama Institusi:<input type='text' name='nama_institusi' id='nama_institusi' value=''><br></label>
+     
+               <label for="NIDN">NIDN:<input type='text' name='nidn' id='nidn' value=''><br></label>
+     
+               <label for="NIP">NIP:<input type='text' name='nip' id='nip' value=''><br></label>
+     
+               <label for="Nomor HP">Nomor HP:<input type='text' name='nomor_hp' id='nomor_hp' value=''><br></label>
+     
+               <label for="E-mail">E-mail:<input type='text' name='email' id='email' value=''><br></label>  
+     
+               <label for="Kategori"> Kategori:<input type='text' name='kategori' id='kategori' value=''><br></label> 
+     
+               <label for="">Status:<input type='text' name='status' id='status' value=''><br></label>
+             
+               <br> 
+     
+             <label for="Tanggal_Masuk">Tanggal Masuk: <input type="date"></label> <label for="Tanggal_keluar" class="Tanggal_keluar">Tanggal Keluar: <input type="date"></label>
+             <label for="Submit"><input type="submit" class="Submit"></label>
+             </div>
+         </div>
+</body>
+</html>

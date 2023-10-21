@@ -1,0 +1,147 @@
+body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 12vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 15px;
+  }
+  
+  .headlogo{
+    left: 0%;
+   margin-left: 2%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 25px;
+    top: 1%;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    top: 1%;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: -0.10%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+.waktu{
+  margin-left: 3%;
+}
+
+.pengembangan{
+  margin-left: 3%;
+}
+
+  .kotak3{
+    position: relative;
+    top: -47%;
+    left: 220px;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 520%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .time-cari{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Mengatur sudut bulat */
+    cursor: pointer;
+    margin-left: 3%;
+  }
+
+  .pengembangan p {
+    display: inline-block;
+    margin-right: 10px; /* Menambahkan jarak antara elemen <p> jika diperlukan */
+}
+
+.kotak4{
+  position: relative;
+  bottom: -4%;
+  left: 20px;
+  height: 70%; /* 10% dari tinggi viewport */
+  width: 96%; /* 100% dari lebar viewport */
+  background-color: #fff; 
+  border: 2px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-email{
+  width: 80%;
+  margin: 0 auto;
+ margin-left: 40px;
+  height: 80%;
+  padding-right: 100px;
+  position: relative;
+}
+button{
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Mengatur sudut bulat */
+  cursor: pointer;
+  margin-left: 90%;
+  margin-top: 20px;
+  font-size: 20px;
+   
+}
+
+#Judul {
+  margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+ 

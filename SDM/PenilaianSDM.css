@@ -1,0 +1,145 @@
+body{
+    background-color: #6A99DD;
+  }
+  
+  .kotak{
+      height: 10vh; /* 10% dari tinggi viewport */
+      width: 100vw; /* 100% dari lebar viewport */
+      background-color: #fff; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: absolute;
+  }
+  
+  .menu{
+    font-size: 28px;
+  }
+  
+  .headlogo{
+  
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 20px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+    font-size: 16px;
+  }
+  
+  .Navigation{
+    font-size: 15px;
+  }
+  
+  .Penilaian{
+    font-size: 15px;
+  }
+  
+  .kotak2{
+    margin-top: -0.2%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    margin-top: 8px;
+    left: 203px;
+    height: 4000px; 
+    width: 1000px; 
+    background-color:#fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+
+  .garis {
+    border: 1px solid black;
+  }
+
+  .data{
+    margin-left: 200px;
+  }
+
+.PenilaianSDM{
+    margin-left: 40%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.patokan{
+  margin-left: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: blue;
+  color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th:nth-child(1) {
+  width: 40%;
+}
+
+.prestasi{
+    margin-left: 15px;
+}
+
+.custom-email{
+    width: 30%;
+    margin: 0 auto;
+   margin-left: 40px;
+    height: 30%;
+    padding-right: 100px;
+    position: relative;
+  }
+
+  .Submit{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Mengatur sudut bulat */
+    cursor: pointer;
+    margin-left: 90%;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+

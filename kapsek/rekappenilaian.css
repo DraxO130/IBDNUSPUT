@@ -1,0 +1,190 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6A99DD;
+}
+
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.text {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.kotak {
+  height: 100px;
+  width: 1920px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.yayasan {
+  font-size: 30px;
+  right: 83%;
+  position: absolute;
+}
+
+.headlogo {
+  width: 75px;
+  height: 85px;
+  margin-left: 4%;
+  position: relative;
+}
+
+.akun {
+  font-size: 30px;
+  right: 4%;
+  position: absolute;
+}
+
+.menu {
+  font-size: 25px;
+}
+
+.main-menu-button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.menu-container.active .submenu {
+  display: block;
+}
+
+.kotak2 {
+  top: 105px;
+  height: 98%;
+  width: 15%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.kotak3 {
+  width: 1350px;
+  height: 2500px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: absolute;
+  left: 17%;
+  top: 20%;
+}
+
+.kotak4 {
+  width: 1200px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.kotak5, .kotak6 {
+  width: 560px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid #646464;
+  border-radius: 10px;
+  display: inline-flex; 
+  vertical-align: top;
+  margin: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #92caff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 5px;
+}
+
+.fa-user {
+  color: #000000;
+}
+.text1 {
+  font-size: 18px;
+}
+
+.text2 {
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tabel {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 660px;
+  margin-bottom: 20px;
+  border: 2px solid #0066FF;
+}
+
+.tabel th {
+  background-color: #0066FF;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #0066FF;
+}
+
+.tabel td {
+  padding: 10px;
+  border: 2px solid #0066FF;
+  text-align: center;
+}
+
+.Rekap-penilaian {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.kotak7 {
+  width: 1200px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 55px; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text3 {
+  font-size: 20px;
+  font-weight: bold;
+  left: 5%
+}
+
+.bantuan,
+.Logout {
+  font-size: 25px;
+}

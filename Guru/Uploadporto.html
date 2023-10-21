@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Portofolio</title>
+  <link rel="stylesheet" href="Uploadporto.css">
+  <link rel="stylesheet" href="path-to-bootstrap/css/bootstrap.min.css">
+  <style>
+    body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 12vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 18px;
+  }
+  
+  .headlogo{
+    left: 2%;
+   margin-left: 2%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 25px;
+    top: 1%;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    top: 1%;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+.waktu{
+  margin-left: 3%;
+}
+
+.pengembangan{
+  margin-left: 3%;
+}
+
+  .kotak3{
+    position: relative;
+    top: -37%;
+    left: 260px;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 520%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .time-cari{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Mengatur sudut bulat */
+    cursor: pointer;
+    margin-left: 3%;
+  }
+
+  .pengembangan p {
+    display: inline-block;
+    margin-right: 10px; /* Menambahkan jarak antara elemen <p> jika diperlukan */
+}
+
+.kotak4{
+  position: relative;
+  bottom: -8%;
+  left: 20px;
+  height: 70%; /* 10% dari tinggi viewport */
+  width: 96%; /* 100% dari lebar viewport */
+  background-color: #fff; 
+  border: 2px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.isi{
+  margin-left: 3%;
+}
+
+.kotak4 p {
+  display: inline; /* Mengubah elemen <p> menjadi inline */
+  margin: 0; /* Menghapus margin pada elemen <p> */
+}
+
+.kotak4 input {
+  display: inline; /* Mengubah elemen <input> menjadi inline */
+  margin: 0; /* Menghapus margin pada elemen <input> */
+}
+ 
+.file-upload {
+  padding: 10px; /* Memberikan padding untuk tampilan yang lebih baik */
+  display: inline-block; /* Agar elemen berdampingan */
+}
+
+/* Gaya CSS untuk input file */
+.file-input {
+  border: 1px solid #ccc; /* Menambahkan border pada elemen input file */
+  padding: 5px; /* Memberikan padding pada input file */
+}
+
+.Submit{
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Mengatur sudut bulat */
+  cursor: pointer;
+  margin-left: 90%;
+  margin-top: 40px;
+  font-size: 20px;
+}
+  </style>
+  <script>
+    // Function to toggle submenu visibility
+    function toggleSubMenu() {
+        const menuContainer = document.querySelector(".menu-container");
+        menuContainer.classList.toggle("active");
+    }
+</script>
+</head>
+<body>
+  <div class="head">
+    <div class="kotak">
+        <div class="yayasan">Yayasan 
+            <br>Nusaputra</div>
+        <div class="akun">Robertus Firenza N</div>
+</div>
+    <img class="headlogo" alt="logo" src="logonusput.jpg" width="60" height="70">
+</div>
+
+<div class="kotak2">
+    <div class="menu-container">
+        <div class="menu">
+            <p class="Navigation">Navigation</p>
+            <a href="homepageguru.html"><div class="menu-item">Dashboard</div></a>
+            <p class="Penilaian">Penilaian Kepegawaian</p>
+            <a href="profilguru.html">
+                <div class="menu-item">Profil</div>
+            </a>
+            <br>
+            <div class="menu-container">
+              <div class="main-menu-button" onclick="toggleSubMenu()">E-Portofolio</div>
+              <div class="submenu">
+                  <a href="Uploadporto.html">
+                      <div class="submenu-item">Upload E-Portofolio</div>
+                  </a>
+                  <a href="daftarguru.html">
+                      <div class="submenu-item">Daftar E-Portofolio</div>
+                  </a>
+              </div>
+            </div>
+            <br>
+            <a href="pusatbantuanguru.html">
+                <div class="menu-item">Pusat Bantuan</div>
+            </a>
+            <br>
+            <a href="">
+                <div class="menu-item">Logout</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="kotak3">
+      <br>
+      <label for=""><div class="waktu">Tahun Ajaran: <input type="datetime">
+        <button class="time-cari">Cari</button>
+      </div></label>
+<br>
+
+      <div class="pengembangan">
+        <a href="Uploadporto.html"><p>pengembangan diri</p></a>
+        <a href="Uploadporto2.html"><p>pengembangan siswa</p></a>
+      </div>
+
+      <div class="kotak4">
+        <div class="isi">
+        <label for="">Nama: <input type="text"></label>
+        <br>
+        <br>
+        <label for="">Judul E-Portofolio: <input type="text"></label>
+        <br>
+        <br>
+        <label for="">waktu: <input type="date" name="" id=""></label>
+        <br>
+        <br>
+        <label for="">Kode DOI: <input type="number"></label>
+        <br>
+        <br>
+        <label for="input"><p class="file-upload">File Pendukung: </p><input type="file" class="file-input" accept=".pdf"></label>
+        <br>
+        <br>
+        <div class="dropdown">
+          <H4>Skala</H4>
+          <form class="dropdown-menu">
+            <label for="sekolah">Sekolah</label>
+            <input type="radio" id="sekolah" name="jenis" value="sekolah">
+            
+            <label for="nasional">Nasional</label>
+            <input type="radio" id="nasional" name="jenis" value="nasional">
+            
+            <label for="internasional">Internasional</label>
+            <input type="radio" id="internasional" name="jenis" value="internasional">
+        </form>
+        </div>
+        <button class="Submit">Submit</button>
+      </div>
+      </div>
+    </div>
+    <script src="path-to-bootstrap/js/jquery.min.js"></script>
+<script src="path-to-bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

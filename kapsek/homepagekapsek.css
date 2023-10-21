@@ -1,0 +1,32 @@
+body {
+  background-color: #6A99DD;
+  font-size: 16px;
+}
+
+.kotak {
+  height: 10vh;
+  width: 100vw;
+  /* Style lainnya */
+}
+
+/* Tampilan pada perangkat dengan lebar layar kurang dari atau sama dengan 768px (handphone dan tablet) */
+@media screen and (max-width: 768px) {
+  .kotak {
+      height: 20vh; /* Misalnya, atur ulang tinggi */
+      /* Atur ulang gaya lainnya sesuai kebutuhan perangkat mobile */
+  }
+
+  /* Misalnya, sembunyikan elemen yang tidak diperlukan pada perangkat mobile */
+  .menu, .kotak2, .kotak3 {
+      display: none;
+  }
+}
+
+/* Tampilan pada perangkat dengan lebar layar kurang dari atau sama dengan 1024px (tablet dan laptop) */
+@media screen and (max-width: 1024px) {
+  body {
+      font-size: 18px; /* Atur ulang ukuran font */
+  }
+
+  /* Atur ulang gaya lainnya sesuai kebutuhan perangkat tablet dan laptop */
+}

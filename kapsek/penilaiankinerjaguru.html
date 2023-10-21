@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian Kinerja Guru</title>
+    <link rel="stylesheet" href="penilaiankinerjaguru.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
+
+    <script>
+       function toggleSubMenuGuru() {
+    var submenuGuru = document.querySelector(".submenu-guru");
+    submenuGuru.classList.toggle("submenu-active");
+}
+
+function toggleSubMenuKinerja() {
+    var submenuKinerja = document.querySelector(".submenu-kinerja");
+    submenuKinerja.classList.toggle("submenu-active");
+}
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+            <img src="logonusput.jpg" alt="logo" class="logo" width="100" height="110">
+        </div>
+    
+    </div>
+    <h1 class="daftar-guru">Penilaian Kinerja</h1>
+    <div class="kotak2">
+        <div class="menu-container">
+            <div class="menu">
+                <p class="Navigation" style="color: #4383DF; font-weight: bold;">Navigation</p>
+            <a href="homepageguru.html">
+                <div class="main-menu-button">Dashboard</div>
+            </a>
+            <p class="Penilaian" style="color: #4383DF; font-weight: bold;">Penilaian Kepegawaian</p>
+            <a href="profilguru.html">
+                <div class="main-menu-button">Profil</div>
+            </a>
+            <div class="menu-container2">
+                <div class="main-menu-button" onclick="toggleSubMenuGuru()">Guru</div>
+                <div class="submenu-guru">
+                    <a href="Daftarguru.html">
+                        <div class="submenu-item">Daftar Guru</div>
+                    </a>
+                </div>
+
+                <div class="main-menu-button" onclick="toggleSubMenuKinerja()">Penilaian Kinerja</div>
+                <div class="submenu-kinerja">
+                    <a href="penilaiankinerjaguru.html">
+                        <div class="submenu-item">Penilaian Kinerja</div>
+                    </a>
+                    <a href="penilaiansupervisi.html">
+                        <div class="submenu-item">Penilaian Supervisi</div>
+                    </a>
+                </div>
+                </div>
+                <a href="">
+                    <div class="menu-item">Pusat Bantuan</div>
+                </a>
+                <a href="">
+                    <div class="menu-item">Logout</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="kotak3">
+        <h1 class="pekin" style="text-align: center;">Penilaian Kinerja Guru</h1>
+        <p style="font-weight: bold; text-align: center;">Skala penilaian: 0 : Tidak ada bukti/tidak terpenuhi 1 : Terpenuhi sebagian (<=85%) 2. Terpenuhi seluruhnya</p>
+        <table class="tabel">
+            <thead>
+                <tr>
+                    <th style="width: 600px;">Aspek Penilaian</th>
+                    <th style="width: 200px;">0</th>
+                    <th style="width: 200px;">1</th>
+                    <th style="width: 200px;">2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold; background-color: #73a7f4;">Penilaian Kompetensi Profesional dan Pedagogik</td>
+                    <td style= "background-color: #73a7f4;"></td>
+                    <td style= "background-color: #73a7f4;"></td>
+                    <td style= "background-color: #73a7f4;"></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; background-color: #ebfda8;">A.Administrasi Perencanaan Pembelajaran</td>
+                    <td style="background-color: #ebfda8;"></td>
+                    <td style="background-color: #ebfda8;"></td>
+                    <td style="background-color: #ebfda8;"></td>
+                </tr>
+                <tr>
+                    <td>1. Silabus (Jumlahnya)</td>
+                    <td><input type="radio" name="01"></td>
+                    <td><input type="radio" name="01"></td>
+                    <td><input type="radio" name="01"></td>
+                </tr>
+                <tr>
+                    <td>&emsp;Pengembangan Silabus</td>
+                    <td><input type="radio" name="02"></td>
+                    <td><input type="radio" name="02"></td>
+                    <td><input type="radio" name="02"></td>
+                </tr>
+                <tr>
+                    <td>2. Program Tahunan</td>
+                    <td><input type="radio" name="03"></td>
+                    <td><input type="radio" name="03"></td>
+                    <td><input type="radio" name="03"></td>
+                </tr>
+                <tr>
+                    <td>3. Program Semester</td>
+                    <td><input type="radio" name="04"></td>
+                    <td><input type="radio" name="04"></td>
+                    <td><input type="radio" name="04"></td>
+                </tr>
+                <tr>
+                    <td>4. Rencana Pelaksanaan Pembelajaran</td>
+                    <td><input type="radio" name="05"></td>
+                    <td><input type="radio" name="05"></td>
+                    <td><input type="radio" name="05"></td>
+                </tr>
+                <tr>
+                    <td>5. Penetapan Kriteria Ketuntasan Minimal Mata Pelajaran</td>
+                    <td><input type="radio" name="06"></td>
+                    <td><input type="radio" name="06"></td>
+                    <td><input type="radio" name="06"></td>
+                </tr>
+                <tr>
+                    <td>6. Bank Soal</td>
+                    <td><input type="radio" name="07"></td>
+                    <td><input type="radio" name="07"></td>
+                    <td><input type="radio" name="07"></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; background-color: #ebfda8;">C. Evaluasi dan Tindak Lanjut</td>
+                    <td style="font-weight: bold; background-color: #ebfda8; text-align: center;">0</td>
+                    <td style="font-weight: bold; background-color: #ebfda8; text-align: center;">1</td>
+                    <td style="font-weight: bold; background-color: #ebfda8; text-align: center;">2</td>
+                </tr>
+                
+                <tr>
+                    <td>1. Penyusunan soal menggunakan kisi-kisi</td>
+                    <td><input type="radio" name="08"></td>
+                    <td><input type="radio" name="08"></td>
+                    <td><input type="radio" name="08"></td>
+                </tr>
+                <tr>
+                    <td>2. Soal sesuai Indicator</td>
+                    <td><input type="radio" name="09"></td>
+                    <td><input type="radio" name="09"></td>
+                    <td><input type="radio" name="09"></td>
+                </tr>
+                <tr>
+                    <td>3. Butir soal ditulis menggunakan kaedah penulisan soal yang benar(kriteria a,b,c,d</td>
+                    <td><input type="radio" name="10"></td>
+                    <td><input type="radio" name="10"></td>
+                    <td><input type="radio" name="10"></td>
+                </tr>
+                <tr>
+                    <td>4. Penilaian dilakukan minimal 3 kali per semester</td>
+                    <td><input type="radio" name="11"></td>
+                    <td><input type="radio" name="11"></td>
+                    <td><input type="radio" name="11"></td>
+                </tr>
+                <tr>
+                    <td>5. Tugas dan Hasil Evaluasi dikoreksi dan dikembalikan kepada siswa</td>
+                    <td><input type="radio" name="12"></td>
+                    <td><input type="radio" name="12"></td>
+                    <td><input type="radio" name="12"></td>
+                </tr>
+                <tr>
+                    <td>6. Penilaian dilakukan dengan tertib</td>
+                    <td><input type="radio" name="13"></td>
+                    <td><input type="radio" name="13"></td>
+                    <td><input type="radio" name="13"></td>
+                </tr>
+                <tr>
+                    <td>7. Melakukan analisis pencapaian ketuntasan belajar </td>
+                    <td><input type="radio" name="14"></td>
+                    <td><input type="radio" name="14"></td>
+                    <td><input type="radio" name="14"></td>
+                </tr>
+                <tr>
+                    <td>8. Melakukan remidi untuk memperbaiki nilai</td>
+                    <td><input type="radio" name="15"></td>
+                    <td><input type="radio" name="15"></td>
+                    <td><input type="radio" name="15"></td>
+                </tr>
+                <tr>
+                    <td>9. Melakukan pengayakan untuk meningkatkan Kompetensi siswa</td>
+                    <td><input type="radio" name="16"></td>
+                    <td><input type="radio" name="16"></td>
+                    <td><input type="radio" name="16"></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                    <td style="background-color: #d7d7d7;"></td>
+                </tr>
+                </tbody>
+                
+                
+                <thead>
+                    <tr>
+                        <th style="width: 600px;">Aspek Penilaian</th>
+                        <th style="width: 200px;">0</th>
+                        <th style="width: 200px;">1</th>
+                        <th style="width: 200px;">2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #73a7f4;">Penilaian Kompetensi Kepribadian</td>
+                        <td style="background-color: #73a7f4;"></td>
+                        <td style="background-color: #73a7f4;"></td>
+                        <td style="background-color: #73a7f4;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Bertindak sesuai dengan Norma Agama,Hukum,Sosial dan Kebudayaan</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. Guru Menghargai dan mempromosikan prinsip-prinsip Pancasila sebagai dasar ideologi dan etika bagi semua warga Indonesia</td>
+                        <td><input type="radio" name="17"></td>
+                        <td><input type="radio" name="17"></td>
+                        <td><input type="radio" name="17"></td>
+                    </tr>
+                    <tr>
+                        <td>2. Guru mengembangkan kerjasama dan membina kebersamaan dengan teman sejawat tanpa memperhatikan perbedaan yang ada (misalnya: suku, agama, dan gender).</td>
+                        <td><input type="radio" name="18"></td>
+                        <td><input type="radio" name="18"></td>
+                        <td><input type="radio" name="18"></td>
+                    </tr>
+                    <tr>
+                        <td>3.Guru saling menghormati dan menghargai teman sejawat sesuai dengan kondisi dan keberadaan masing- masing.</td>
+                        <td><input type="radio" name="19"></td>
+                        <td><input type="radio" name="19"></td>
+                        <td><input type="radio" name="19"></td>
+                    </tr>
+                    <tr>
+                        <td>4. Guru memiliki rasa persatuan dan kesatuan sebagai bangsa Indonesia.</td>
+                        <td><input type="radio" name="20"></td>
+                        <td><input type="radio" name="20"></td>
+                        <td><input type="radio" name="20"></td>
+                    </tr>
+                    <tr>
+                        <td>5. Guru mempunyai pandangan yang luas tentang keberagaman bangsa Indonesia (misalnya: budaya, suku, agama).</td>
+                        <td><input type="radio" name="21"></td>
+                        <td><input type="radio" name="21"></td>
+                        <td><input type="radio" name="21"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Menunjukkan Pribadi yang teladan dan dewasa</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. Guru bertingkah laku santun dalam berbicara, berpenampilan sopan, terhadap semua peserta didik, orang tua, dan teman sejawat.</td>
+                        <td><input type="radio" name="22"></td>
+                        <td><input type="radio" name="22"></td>
+                        <td><input type="radio" name="22"></td>
+                    </tr>
+                    <tr>
+                        <td>2. Guru peduli dengan kebersihan diri dan lingkungan</td>
+                        <td><input type="radio" name="23"></td>
+                        <td><input type="radio" name="23"></td>
+                        <td><input type="radio" name="23"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Menjunjung tinggi kejujuran</td>
+                        <td><input type="radio" name="24"></td>
+                        <td><input type="radio" name="24"></td>
+                        <td><input type="radio" name="24"></td>
+                    </tr>
+                    <tr>
+                        <td>4. Guru bersikap dewasa dalam menerima masukan dari peserta didik.</td>
+                        <td><input type="radio" name="25"></td>
+                        <td><input type="radio" name="25"></td>
+                        <td><input type="radio" name="25"></td>
+                    </tr>
+                    <tr>
+                        <td>5. Guru berperilaku baik untuk mencitrakan nama baik sekolah</td>
+                        <td><input type="radio" name="26"></td>
+                        <td><input type="radio" name="26"></td>
+                        <td><input type="radio" name="26"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Etos Kerja, tanggung jawab yang tinggi dan rasa bangga menjadi guru</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1 Guru mengawali dan mengakhiri pembelajaran dengan tepat waktu.</td>
+                        <td><input type="radio" name="27"></td>
+                        <td><input type="radio" name="27"></td>
+                        <td><input type="radio" name="27"></td>
+                    </tr>
+                    <tr>
+                        <td>2. Jika guru harus meninggalkan kelas, guru mengaktifkan siswa dengan melakukan hal-hal produktif terkait dengan mata pelajaran, dan meminta guru piket atau guru lain untuk mengawasi kelas.</td>
+                        <td><input type="radio" name="28"></td>
+                        <td><input type="radio" name="28"></td>
+                        <td><input type="radio" name="28"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Guru memenuhi jam mengajar dan dapat melakukan semua kegiatan lain di luar jam mengajar berdasarkan ijin dan persetujuan pengelola sekolah.</td>
+                        <td><input type="radio" name="29"></td>
+                        <td><input type="radio" name="29"></td>
+                        <td><input type="radio" name="29"></td>
+                    </tr>
+                    <tr>
+                        <td>4 Guru menyelesaikan semua tugas administratif dan non-pembelajaran dengan tepat waktu sesuai standar yang ditetapkan.</td>
+                        <td><input type="radio" name="30"></td>
+                        <td><input type="radio" name="30"></td>
+                        <td><input type="radio" name="30"></td>
+                    </tr>
+                    <tr>
+                        <td>5. Guru merasa bangga dengan profesinya.</td>
+                        <td><input type="radio" name="31"></td>
+                        <td><input type="radio" name="31"></td>
+                        <td><input type="radio" name="31"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #73a7f4;">Penilaian Kompetensi Sosial</td>
+                        <td style="background-color: #73a7f4;"></td>
+                        <td style="background-color: #73a7f4;"></td>
+                        <td style="background-color: #73a7f4;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Bersikap inklusif, bertindak objektif, serta tidak diskriminatif</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. Guru memperlakukan semua peserta didik secara adil, memberikan perhatian dan bantuan sesuai kebutuhan masing-masing, tanpa memperdulikan personal. faktopersonal.</td>
+                        <td><input type="radio" name="32"></td>
+                        <td><input type="radio" name="32"></td>
+                        <td><input type="radio" name="32"></td>
+                    </tr>
+                    <tr>
+                        <td>2. Guru menjaga hubungan baik dan peduli dengan teman sejawat (bersifat inklusif), serta berkontribusi positif terhadap semua diskusi formal dan informal terkait dengan pekerjaannya.</td>
+                        <td><input type="radio" name="33"></td>
+                        <td><input type="radio" name="33"></td>
+                        <td><input type="radio" name="33"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Guru sering berinteraksi dengan peserta didik dan tidak membatasi perhatiannya hanya pada kelompok tertentu (misalnya: peserta didik yang pandai, kaya, berasal dari daerah yang sama dengan guru).</td>
+                        <td><input type="radio" name="34"></td>
+                        <td><input type="radio" name="34"></td>
+                        <td><input type="radio" name="34"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Komunikasi dengan sesama guru, tenaga pendidik, orang tua peserta didik dan masyarakat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. Guru menyampaikan informasi tentang kemajuan, kesulitan, dan potensi peserta didik kepada orang tuanya, baik dalam pertemuan formal maupun tidak formal antara guru dan orang tua, teman sejawat, dan dapat menunjukkan buktinya.</td>
+                        <td><input type="radio" name="35"></td>
+                        <td><input type="radio" name="35"></td>
+                        <td><input type="radio" name="35"></td>
+                    </tr>
+                    <tr>
+                        <td>2. Guru memperhatikan sekolah sebagai bagian dari masyarakat, berkomunikasi dengan masyarakat sekitar, serta berperan dalam kegiatan sosial di masyarakat.</td>
+                        <td><input type="radio" name="36"></td>
+                        <td><input type="radio" name="36"></td>
+                        <td><input type="radio" name="36"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #73a7f4;">Penilaian Loyalitas</td>
+                        <td style="background-color: #73a7f4;"></td>
+                        <td style="background-color: #73a7f4;"></td>
+                        <td style="background-color: #73a7f4;"></td>
+                    </tr>
+                    <tr>
+                        <td>1.Bersedia meluangkan waktu untuk kepentingan sekolah di luar jam Kerja</td>
+                        <td><input type="radio" name="37"></td>
+                        <td><input type="radio" name="37"></td>
+                        <td><input type="radio" name="37"></td>
+                    </tr>
+                    <tr>
+                        <td>2.Menjaga rahasia internal</td>
+                        <td><input type="radio" name="38"></td>
+                        <td><input type="radio" name="38"></td>
+                        <td><input type="radio" name="38"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Menyampaikan hal positif tentang sekolah</td>
+                        <td><input type="radio" name="39"></td>
+                        <td><input type="radio" name="39"></td>
+                        <td><input type="radio" name="39"></td>
+                    </tr>
+                    <tr>
+                        <td>4. Taat peraturan tanpa diawasi</td>
+                        <td><input type="radio" name="40"></td>
+                        <td><input type="radio" name="40"></td>
+                        <td><input type="radio" name="40"></td>
+                    </tr>
+                    <tr>
+                        <td>5. Setia pada NKRI (kehadiran upacara, tidak berpaham radikal)</td>
+                        <td><input type="radio" name="41"></td>
+                        <td><input type="radio" name="41"></td>
+                        <td><input type="radio" name="41"></td>
+                    </tr>
+                    <tr>
+                        <td>6. Berpartisipasi aktif dalam kegiatan sekolah</td>
+                        <td><input type="radio" name="42"></td>
+                        <td><input type="radio" name="42"></td>
+                        <td><input type="radio" name="42"></td>
+                    </tr>
+                    <tr>
+                        <td>7. Taat pada pimpinan</td>
+                        <td><input type="radio" name="43"></td>
+                        <td><input type="radio" name="43"></td>
+                        <td><input type="radio" name="43"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; background-color: #d7d7d7;">Total Skor</td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                        <td style="background-color: #d7d7d7;"></td>
+                    </tr>
+                </tbody>
+            </table>  
+        <br>
+        <br>
+       <button type="submit" class="submit">Submit</button>
+    </div>
+</body>
+</html>

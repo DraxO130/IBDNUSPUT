@@ -1,0 +1,113 @@
+body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 10vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 20px;
+  }
+  
+  .headlogo{
+  width: 4%;
+    height: 2%;
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 25px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 24px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 100px;
+ 
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: blue;
+    color: white;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    position: relative;
+    top: -47%;
+    margin-top: 20px;
+    left: -83%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 520%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 200%;
+  }
+  
+  .kotak4{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 76%; 
+    width: 37%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+
+  }
+
+  
+
+  

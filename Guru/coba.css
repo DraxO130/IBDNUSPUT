@@ -1,0 +1,270 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6A99DD;
+}
+
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.daftar-guru {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.kotak {
+  height: 50px;
+  width: 4000px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.yayasan {
+  font-size: 30px;
+  right: 81%;
+  position: absolute;
+}
+
+.headlogo {
+  width: 75px;
+  height: 85px;
+  margin-left: 4%;
+  position: relative;
+}
+
+.akun {
+  font-size: 30px;
+  right: 4%;
+  position: absolute;
+}
+
+.kotak2 {
+  top: 105px;
+  height: 1500px;
+  width: 170px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
+}
+
+.menu {
+  font-size: 20px;
+}
+
+.main-menu-button {
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 2;
+}
+
+.menu-container.active .submenu {
+  display: block;
+}
+
+.submenu-item {
+  padding-left: 25px;
+}
+
+.bantuan,
+.Logout {
+  padding-left: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.kotak3 {
+  width: 1350px;
+  height: 9000px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  left: 8%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pekin {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.tabel {
+  margin: 0 auto;
+  position: relative;
+  left: 10px;
+  top: 30px;
+  background-color: #5892E8;
+  color: #fff;
+  border-collapse: collapse;
+  width: 840px;
+}
+
+.tabel th,
+.tabel td {
+  width: 210px;
+  height: 75px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #5892E8;
+  text-align: center;
+}
+
+.tabel th {
+  background-color: #5892E8;
+  color: #000000;
+  font-weight: bold;
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6A99DD;
+}
+
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.daftar-guru {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.kotak {
+  height: 100px;
+  width: 4000px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.yayasan {
+  font-size: 30px;
+  right: 81%;
+  position: absolute;
+}
+
+.headlogo {
+  width: 75px;
+  height: 85px;
+  margin-left: 4%;
+  position: relative;
+}
+
+.akun {
+  font-size: 30px;
+  right: 4%;
+  position: absolute;
+}
+
+.kotak2 {
+  top: 105px;
+  height: 1500px;
+  width: 170px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
+}
+
+.menu {
+  font-size: 20px;
+}
+
+.main-menu-button {
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 2;
+}
+
+.menu-container.active .submenu {
+  display: block;
+}
+
+.submenu-item {
+  padding-left: 25px;
+}
+
+.bantuan,
+.Logout {
+  padding-left: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.kotak3 {
+  width: 1350px;
+  height: 9000px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  left: 8%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pekin {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.tabel {
+  margin: 0 auto;
+  position: relative;
+  left: 10px;
+  top: 30px;
+  background-color: #5892E8;
+  color: #fff;
+  border-collapse: collapse;
+  width: 840px;
+}
+
+.tabel th,
+.tabel td {
+  width: 210px;
+  height: 75px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #5892E8;
+  text-align: center;
+}
+
+.tabel th {
+  background-color: #5892E8;
+  color: #000000;
+  font-weight: bold;
+}

@@ -1,0 +1,187 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6A99DD;
+}
+
+* {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.daftar-guru {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.kotak {
+  height: 100px;
+  width: 1690px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.yayasan {
+  font-size: 30px;
+  right: 81%;
+  position: absolute;
+}
+
+.headlogo {
+  width: 75px;
+  height: 85px;
+  margin-left: 4%;
+  position: relative;
+}
+
+.akun {
+  font-size: 30px;
+  right: 4%;
+  position: absolute;
+}
+
+.main-menu-button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.submenu-guru,
+        .submenu-kinerja {
+            display: none;
+        }
+        .submenu-guru.active,
+        .submenu-kinerja.active {
+            display: block;
+        }
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.menu-container.active .submenu {
+  display: block;
+}
+
+.menu{
+  padding-top: 4%;
+  padding-left: 3%;
+}
+
+.kotak2{
+  margin-top: 0.3%;
+  height: 98%; /* 10% dari tinggi viewport */
+  width: 15%; /* 100% dari lebar viewport */
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.menu{
+  font-size: 25px;
+}
+
+.bantuan{
+  font-size: 25px;
+}
+
+.Logout{
+  font-size: 25px;
+}
+
+.kotak3 {
+  width: 1350px;
+  height: 1200px;
+  background-color: white;
+  margin-top: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  left: 17%;
+  margin-top: 4%;
+}
+
+.guru-tetap {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.search-rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 35px;
+}
+
+.search {
+  font-size: 18px;
+  margin-right: 10px;
+  position: static;
+}
+
+.rectangle {
+  width: 275px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #000;
+  position: static;
+}
+
+.tabel {
+  margin: 0 auto;
+  position: relative;
+  left: 10px;
+  top: 30px;
+  background-color: #5892E8;
+  color: #fff;
+}
+
+.tabel th,
+.tabel td {
+  width: 210px;
+  height: 75px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tabel th {
+  background-color: #5892E8;
+  color: #000000;
+}
+
+.total-guru {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  justify-content: flex-start;
+}
+
+/* CSS */
+.row-of-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.row-of-numbers div {
+  text-align: center;
+  border: 1px solid black;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  height: 30px;
+  margin: 0 2px;
+}

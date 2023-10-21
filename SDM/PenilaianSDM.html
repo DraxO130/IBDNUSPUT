@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian Guru</title>
+    <link rel="stylesheet" href="PenilaianSDM.css">
+    <style>
+
+body{
+    background-color: #6A99DD;
+  }
+  
+  .kotak{
+      height: 10vh; /* 10% dari tinggi viewport */
+      width: 100vw; /* 100% dari lebar viewport */
+      background-color: #fff; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: absolute;
+  }
+  
+  .menu{
+    font-size: 28px;
+  }
+  
+  .headlogo{
+  
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 20px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+    font-size: 16px;
+  }
+  
+  .Navigation{
+    font-size: 15px;
+  }
+  
+  .Penilaian{
+    font-size: 15px;
+  }
+  
+  .kotak2{
+    margin-top: -0.2%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    margin-top: 8px;
+    left: 203px;
+    height: 4000px; 
+    width: 1000px; 
+    background-color:#fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+
+  .garis {
+    border: 1px solid black;
+  }
+
+  .data{
+    margin-left: 200px;
+  }
+
+.PenilaianSDM{
+    margin-left: 40%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.patokan{
+  margin-left: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: blue;
+  color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th:nth-child(1) {
+  width: 40%;
+}
+
+.prestasi{
+    margin-left: 15px;
+}
+
+.custom-email{
+    width: 30%;
+    margin: 0 auto;
+   margin-left: 40px;
+    height: 30%;
+    padding-right: 100px;
+    position: relative;
+  }
+
+  .Submit{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Mengatur sudut bulat */
+    cursor: pointer;
+    margin-left: 90%;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  .popup {
+      position: fixed;
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Style the popup box */
+    .popup-box {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      height: auto;
+      text-align: center;
+    }
+
+    /* Style the close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+      .Logout {
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /* Adjust padding for height and width as needed */
+    }
+
+    .pilihan{
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /
+    }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+        </div>
+        <img class="headlogo" alt="" src="logonusput.jpg" width="55" height="60">
+
+        <div class="kotak2">
+            <div class="menu-container">
+                <div class="menu">
+                    <p class="Navigation">Menu</p>
+                    <a href="HomepageSDM.html">
+                        <div class="menu-item">Dashbord</div>
+                    </a>
+                    <p class="Penilaian">Kepegawaian</p>
+                    <a href="profilSDM.html">
+                        <div class="menu-item">Profil</div>
+                    </a>
+                    <br>
+                    <div class="menu-container2">
+                        <div class="submenu-guru">
+                            <a href="Daftarguru.html">
+                                <div class="submenu-item">Guru</div><br>
+                            </a>
+                        </div>
+                        <a href="PenilaianSDM.html"><div class="menu2">Penilaian Kinerja</div></a><br>
+                        </div>
+                        <a href="DaftarE-Porto.html"><div class="menu3">Daftar E-portofolio</div></a>
+                    </div><br>
+                    <a href="RekapPenilaian.html"><div class="Rekap">Rekap Penilaian</div></a>
+                </div>
+                <br>
+                <a href="">
+                    <div class="bantuan">Pusat Bantuan</div>
+                </a>
+                <br>
+                <button class="Logout" onclick="document.getElementById('popup').style.display='block'">Logout</button>
+                <div id="popup" class="popup">
+
+                    <!-- Popup box -->
+                    <div class="popup-box">
+                      <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+                      <p>Yakin ingin keluar?</p>
+                      <button class="pilihan">Ya</button>
+                      <button class="pilihan">Tidak</button>
+                    </div>
+                  
+                  </div>
+            </div>
+        </div>
+
+        <div class="kotak3">
+            <div class="data">
+            <p class="nama_guru">Robertus Firenza Nugroho</p>
+            <p class="ID">19283573023853827</p>
+            <p class="guru">Guru SMA</p>
+            </div>
+            <div class="garis"></div>
+            <div class="PenilaianSDM">Penilaian SDM</div>
+            <img src="Tabelpemberitahuan.png" alt="Tabelpemberitahuan" class="patokan" width="900" height="200">
+            <br>
+            
+            <div class="tabel">
+                <p>Bulan 1</p> <br>
+                <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                  </table>
+                  <br>
+                  <p>Bulan 2</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                  </table>
+                  <br>
+                  <p>Bulan 3</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                  </table>
+                  <br>
+                  <p>Bulan 4</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                  </table>
+                  <br>
+                  <p>Bulan 5</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                  </table>
+                  <br>
+                  <p>Bulan 6</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <p>Bulan 7</p>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <p>Bulan 8</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <p>Bulan 9</p>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <p>Bulan 10</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <p>Bulan 11</p>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <p>Bulan 12</p>
+                  <br>
+                  <table>
+                    <tr>
+                      <th>Penilaian Kedisiplinan</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                    </tr>
+                    <tr>
+                      <td>1. Absensi</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2. Pemakaian Seragam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3. Perilaku Baik Lain</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>  
+                    <tr>
+                      <td>4. Izin Ketepatan Pribadi (Diluar Sakit)</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr>  
+                    <tr>  
+                      <td>5. Arogansi Guru Terhadap Siswa</td>  
+                      <td></td>  
+                      <td></td>  
+                      <td></td>  
+                    </tr> 
+                  </table>
+                  <br>
+                  <button class="Submit">Submit</button>
+    </div>
+</body>
+</html>

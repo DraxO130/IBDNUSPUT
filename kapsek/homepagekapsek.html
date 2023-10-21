@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage Kepala Sekolah</title>
+    <link rel="stylesheet" href="homepagekapsek.css">
+    <style>
+        body{
+  background-color: #6A99DD;
+  }
+
+  .kotak{
+    height: 10vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 28px;
+  }
+  
+  .headlogo{
+  
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 40px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 40px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+.headlogo{
+width: 80px;
+height: 90px;
+ margin-left: 4%;
+  position: relative;
+}
+
+.yayasan{
+  font-size: 30px;
+  right: 84%;
+  position: absolute;
+}
+
+.akun{
+  font-size: 40px;
+  right: 4%;
+  position: absolute;
+}
+
+.main-menu-button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.submenu-guru,
+        .submenu-kinerja {
+            display: none;
+        }
+        .submenu-guru.active,
+        .submenu-kinerja.active {
+            display: block;
+        }
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.menu-container.active .submenu {
+  display: block;
+}
+
+.menu{
+  padding-top: 4%;
+  padding-left: 3%;
+}
+
+.kotak2{
+  margin-top: -0.2%;
+  height: 98%; /* 10% dari tinggi viewport */
+  width: 15%; /* 100% dari lebar viewport */
+  background-color: #fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.menu{
+  font-size: 25px;
+}
+
+.bantuan{
+  font-size: 25px;
+}
+
+.Logout{
+  font-size: 25px;
+}
+
+.kotak3{
+  margin-top: 1%;
+  left: 300px;
+  height: 1000px; 
+  width: 1500px; 
+  background-color:#fff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.kotak4{
+ background-color: brown;
+ left: 180px;
+ width: 300px;
+ height: 150px;
+ position: absolute;
+}
+
+.kotak5{
+ background-color: blue;
+ left: 600px;
+ width: 300px;
+ height: 150px;
+ position: absolute;
+}
+
+.kotak6{
+  background-color:green;
+  right: 180px;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+}
+
+.Selamat{
+  font-size: 28px;
+  padding-left: 12px;
+}
+
+.ISI{
+  font-size: 20px;
+  color: cornsilk;
+  text-align: center;
+}
+
+.dashboard {
+  display: table;
+  width: 100%;
+  text-align: center; /* Pusatkan teks */
+  margin-top: 300px;
+}
+
+/* Style untuk baris tabel */
+.dashboard-row {
+  display: table-row;
+}
+
+/* Style untuk sel tabel */
+.dashboard-section {
+  display: table-cell;
+  width: 40%; /* Bagi dua kolom */
+  height: 120px; /* Tinggi bagian */
+  border: 1px solid #ccc;
+  
+}
+
+/* Style untuk judul bagian */
+.dashboard-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Style untuk bagian kosong */
+.dashboard-empty {
+  color: #999;
+}
+
+.dashboard-left {
+  margin-right: 20px; /* Tambahkan celah 20px ke kanan */
+}
+
+/* Style untuk bagian kanan */
+.dashboard-right {
+  margin-left: 20px; /* Tambahkan celah 20px ke kiri */
+}
+</style>
+    <script>
+        function toggleSubMenuGuru() {
+            const submenuGuru = document.querySelector(".submenu-guru");
+            submenuGuru.classList.toggle("active");
+        }
+
+        function toggleSubMenuKinerja() {
+            const submenuKinerja = document.querySelector(".submenu-kinerja");
+            submenuKinerja.classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+        </div>
+        <img class="headlogo" alt="" src="logonusput.jpg" width="100" height="110">
+    </div>
+
+    <div class="kotak2">
+        <div class="menu-container">
+            <div class="menu">
+                <p class="Navigation">Navigation</p>
+                <a href="homepagekapsek.html">
+                    <div class="menu-item">Dashbord</div>
+                </a>
+                <p class="Penilaian">Penilaian Kepegawaian</p>
+                <a href="profilkapsek.html">
+                    <div class="menu-item">Profil</div>
+                </a>
+                <br>
+                <div class="menu-container2">
+                    <div class="main-menu-button" onclick="toggleSubMenuGuru()">Guru</div>
+                    <div class="submenu-guru">
+                        <a href="Daftarguru.html">
+                            <div class="submenu-item">Daftar Guru</div>
+                        </a>
+                    </div>
+
+                    <div class="main-menu-button" onclick="toggleSubMenuKinerja()">Penilaian Kinerja</div>
+                    <div class="submenu-kinerja">
+                        <a href="penilaiankinerjaguru.html">
+                            <div class="submenu-item">Penilaian Kinerja</div>
+                        </a>
+                        <a href="penilaiansupervisi.html">
+                            <div class="submenu-item">Penilaian Supervisi</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="pusatbantuan.html">
+                <div class="bantuan">Pusat Bantuan</div>
+            </a>
+            <br>
+            <a href="">
+                <div class="Logout">Logout</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="kotak3">
+        <div class="ISI_kotak3">
+            <p class="Selamat">Selamat Datang di Sistem Informasi Penilaian Kinerja Karyawan</p>
+            <p class="Selamat">Yayasan Nusaputera</p>
+            <br>
+            <div class="kotak4">
+                <div class="ISI">
+                <p>Total</p>
+                <p>10</p>
+                <p>Data Guru</p>
+            </div>
+            </div>
+            <div class="kotak5">
+                <div class="ISI">
+                <p>Total</p>
+                <p>7</p>
+                <p>Data Sekolah</p>
+                </div>
+            </div>
+            <div class="kotak6">
+                <div class="ISI">
+                <p>Total</p>
+                <p>9</p>
+                <p>Data User</p>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="dashboard-row">
+                <!-- Bagian kiri atas -->
+                <div class="dashboard-section">
+                    <div class="dashboard-title">Guru Nilai Tertinggi</div>
+                    <div class="dashboard-empty">Kosong</div>
+                </div>
+                <br>
+                <!-- Bagian kanan atas -->
+                <div class="dashboard-section">
+                    <div class="dashboard-title">Guru Nilai Terendah</div>
+                    <div class="dashboard-empty">Kosong</div>
+                </div>
+            </div>
+            <br>
+            <div class="dashboard-row">
+                <!-- Bagian kiri bawah -->
+                <div class="dashboard-section">
+                    <div class="dashboard-title">Data Absensi</div>
+                    <div class="dashboard-empty">Kosong</div>
+                </div>
+                <br>
+                <!-- Bagian kanan bawah -->
+                <div class="dashboard-section">
+                    <div class="dashboard-title">Guru Teraktif</div>
+                    <div class="dashboard-empty">Kosong</div>
+                </div>
+            </div>
+        </div>
+   
+</body>
+
+</html>

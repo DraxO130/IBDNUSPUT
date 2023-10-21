@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Portofolio</title>
+  <link rel="stylesheet" href="Uploadporto.css">
+  <link rel="stylesheet" href="path-to-bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="head">
+    <div class="kotak">
+        <div class="yayasan">Yayasan 
+            <br>Nusaputra</div>
+        <div class="akun">Robertus Firenza N</div>
+</div>
+    <img class="headlogo" alt="" src="logonusput.jpg" width="60" height="70">
+</div>
+
+<div class="kotak2">
+    <div class="menu-container">
+        <div class="menu">
+            <p class="Navigation">Navigation</p>
+            <a href="homepageguru.html"><div class="menu-item">Dashboard</div></a>
+            <p class="Penilaian">Penilaian Kepegawaian</p>
+            <a href="profilguru.html">
+                <div class="menu-item">Profil</div>
+            </a>
+            <br>
+            <div class="menu-container">
+                <div class="main-menu-button" onclick="toggleSubMenu()">E-Portofolio</div>
+                <div class="submenu">
+                    <a href="Uploadporto.html">
+                        <div class="submenu-item">Upload E-Portofolio</div>
+                    </a>
+                    <a href="daftarguru.html">
+                        <div class="submenu-item">Daftar E-Portofolio</div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <a href="pusatbantuanguru.html">
+                <div class="menu-item">Pusat Bantuan</div>
+            </a>
+            <br>
+            <a href="">
+                <div class="menu-item">Logout</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="kotak3">
+      <br>
+      <div class="waktu"><label for="tahun ajaran">Tahun Ajaran: <input type="datetime"></label>
+        <button class="time-cari">Cari</button>
+      </div>
+<br>
+
+      <div class="pengembangan">
+        <a href="Uploadporto.html"><p>pengembangan diri</p></a>
+        <a href="Uploadporto2.html"><p>pengembangan siswa</p></a>
+      </div>
+
+      <div class="kotak4">
+        <div class="isi">
+        <label for="Nama">Nama: <input type="text"></label>
+        <br>
+        <br>
+        <label for="Judul">Judul E-Portofolio:  <input type="text"></label>
+        <br>
+        <br>
+        <label for="File" class="file-upload">File Pendukung: <input type="file" class="file-input" accept=".pdf"></label>
+        <br>
+        <br>
+        <button class="Submit">Submit</button>
+      </div>
+      </div>
+    </div>
+    <script src="path-to-bootstrap/js/jquery.min.js"></script>
+<script src="path-to-bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

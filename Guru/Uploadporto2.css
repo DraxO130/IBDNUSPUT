@@ -1,0 +1,158 @@
+body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 12vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 18px;
+  }
+  
+  .headlogo{
+    left: 2%;
+   margin-left: 2%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 25px;
+    top: 1%;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 25px;
+    top: 1%;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+.waktu{
+  margin-left: 3%;
+}
+
+.pengembangan{
+  margin-left: 3%;
+}
+
+  .kotak3{
+    position: relative;
+    top: -37%;
+    left: 260px;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 520%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .time-cari{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Mengatur sudut bulat */
+    cursor: pointer;
+    margin-left: 3%;
+  }
+
+  .pengembangan p {
+    display: inline-block;
+    margin-right: 10px; /* Menambahkan jarak antara elemen <p> jika diperlukan */
+}
+
+.kotak4{
+  position: relative;
+  bottom: -8%;
+  left: 20px;
+  height: 70%; /* 10% dari tinggi viewport */
+  width: 96%; /* 100% dari lebar viewport */
+  background-color: #fff; 
+  border: 2px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.isi{
+  margin-left: 3%;
+}
+
+.kotak4 p {
+  display: inline; /* Mengubah elemen <p> menjadi inline */
+  margin: 0; /* Menghapus margin pada elemen <p> */
+}
+
+.kotak4 input {
+  display: inline; /* Mengubah elemen <input> menjadi inline */
+  margin: 0; /* Menghapus margin pada elemen <input> */
+}
+ 
+.file-upload {
+  padding: 10px; /* Memberikan padding untuk tampilan yang lebih baik */
+  display: inline-block; /* Agar elemen berdampingan */
+}
+
+/* Gaya CSS untuk input file */
+.file-input {
+  border: 1px solid #ccc; /* Menambahkan border pada elemen input file */
+  padding: 5px; /* Memberikan padding pada input file */
+}
+
+.Submit{
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Mengatur sudut bulat */
+  cursor: pointer;
+  margin-left: 90%;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+ 

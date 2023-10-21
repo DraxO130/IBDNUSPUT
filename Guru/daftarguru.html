@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Guru</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload"
+        href="https://s3-alpha-sig.figma.com/img/7ac2/e348/c1c146fe83bb81b6cdbabdeea7779fc6?Expires=1696809600&Signature=BjGXfpCWXA~HZRWuSa8FKafBFXTkS8Po8Nx4yZxYku8zAa~yAm59wja-CTB5DKfUZ2iHjefYMaAAmtY04n9H7Pg9A9TliAHNaxBW~r~NRON0o7qyck5v9JtaMCjZmJBq~sGJ3kx60--dqNWLvsrwZBM5fUTSS8fVSIo7yBOcKNLS7kbnAVvNMIPDOXaedI-SbMGrAdfGPDbYfNe44GCJD2DKoZICZfy8bd4EgFnTRP9t4Lb1foEcXwCIh67LmNj1QhjLChiYplPC9Nd5ckQ6EXm~udxbHD68N9WvCsgjdojrNhaT621B2F5vEvMY9qCmLMBH0Qpk798Z1be8CIjnWg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        as="image" />
+<link rel="stylesheet" href="daftarguru.css">
+<style>
+    body{
+  background-color: #6A99DD;
+  }
+  
+  /* Style for the main menu button */
+  .kotak{
+    height: 10vh; /* 10% dari tinggi viewport */
+    width: 100vw; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .menu{
+    font-size: 20px;
+  }
+  
+  .headlogo{
+  width: 4%;
+    height: 2%;
+   margin-left: 4%;
+    position: relative;
+  }
+  
+  .yayasan{
+    font-size: 25px;
+    right: 84%;
+    position: absolute;
+  }
+  
+  .akun{
+    font-size: 24px;
+    right: 4%;
+    position: absolute;
+  }
+  
+  .main-menu-button {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 100px;
+ 
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: blue;
+    color: white;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  
+  /* Style for the submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .menu-container.active .submenu {
+    display: block;
+  }
+  
+  .menu{
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  
+  .kotak2{
+    margin-top: 0.1%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 15%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+  
+  .kotak3{
+    position: relative;
+    top: -47%;
+    margin-top: 20px;
+    left: -83%;
+    height: 90%; /* 10% dari tinggi viewport */
+    width: 520%; /* 100% dari lebar viewport */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 200%;
+  }
+  
+  .kotak4{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    height: 76%; 
+    width: 37%; 
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(1, 1, 1, 1);
+
+    .popup {
+      position: fixed;
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Style the popup box */
+    .popup-box {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      height: auto;
+      text-align: center;
+    }
+
+    /* Style the close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .Logout {
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /* Adjust padding for height and width as needed */
+    }
+
+    .pilihan{
+        font-size: 24px; /* Adjust the font size as needed for the desired button size */
+        padding: 10px 20px; /
+    } 
+
+
+  }
+</style>
+    <script>
+        // Function to toggle submenu visibility
+        function toggleSubMenu() {
+            const menuContainer = document.querySelector(".menu-container");
+            menuContainer.classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="kotak">
+            <div class="yayasan">Yayasan
+                <br>Nusaputra
+            </div>
+            <div class="akun">Robertus Firenza N</div>
+        </div>
+        <img class="headlogo" alt="" src="logonusput.jpg" width="100" height="110">
+
+    </div>
+
+    <div class="kotak2">
+        <div class="menu-container">
+            <div class="menu">
+                <p class="Navigation">Menu</p>
+                <a href="homepageguru.html">
+                    <div class="menu-item">Dashboard</div>
+                </a>
+                <p class="Penilaian">Kepegawaian</p>
+                <a href="profilguru.html">
+                    <div class="menu-item">Profil</div>
+                </a>
+                <br>
+                <div class="menu-container">
+                    <div class="main-menu-button" onclick="toggleSubMenu()">E-Portofolio</div>
+                    <div class="submenu">
+                        <a href="Uploadporto.html">
+                            <div class="submenu-item">Upload E-Portofolio</div>
+                        </a>
+                        <a href="daftarguru.html">
+                            <div class="submenu-item">Daftar E-Portofolio</div>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <a href="pusatbantuanguru.html">
+                    <div class="menu-item">Pusat Bantuan</div>
+                </a>
+                <br>
+                <button class="Logout" onclick="document.getElementById('popup').style.display='block'">Logout</button>
+                    <div id="popup" class="popup">
+
+                        <!-- Popup box -->
+                        <div class="popup-box">
+                          <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+                          <p>Yakin ingin keluar?</p>
+                          <button class="pilihan">Ya</button>
+                          <button class="pilihan">Tidak</button>
+                        </div>
+                      
+                      </div>
+            </div>
+        </div>
+
+        <div class="kotak3"> 
+            <br>
+            <input type="text" placeholder="Search" style="float:right;margin-bottom:10px;">
+            <br>
+            <br>
+
+            <div class="tabel">
+                <table>
+                    <tr>
+                      <th>No.</th>
+                      <th>Judul Portfolio</th>
+                      <th>Tanggal Kegiatan</th>
+                      <th>File Pendukung</th>
+                      <th>Kode DOI</th>
+                      <th>Keterangan</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Portfolio 1</td>
+                      <td>01/01/2023</td>
+                      <td><a href="#">file.pdf</a></td>
+                      <td>DOI-1234</td>
+                      <td>X</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Portfolio 2</td>
+                      <td>02/01/2023</td>
+                      <td><a href="#">file.docx</a></td>
+                      <td>DOI-5678</td>
+                      <td>V</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Portfolio 3</td>
+                      <td>03/01/2023</td>
+                      <td><a href="#">file.pptx</a></td>
+                      <td>DOI-9101</td>
+                      <td>V</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Portfolio 4</td>
+                      <td>04/01/2023</td>
+                      <td><a href="#">file.xlsx</a></td>
+                      <td>DOI-1121</td>
+                      <td>V</td>
+                  
+                    </tr>
+                  
+                  </table>
+                       
+            </div>
+        </div>
+            
+</body>
+
+</html>
